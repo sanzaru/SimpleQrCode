@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681FCC32251E175B006D5C4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 681FCC31251E175B006D5C4E /* README.md */; };
+		688AA34424D606D200AA9CAB /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688AA34324D606D200AA9CAB /* KeyboardResponder.swift */; };
 		68F1398E24A4CD39000EDDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F1398D24A4CD39000EDDEF /* AppDelegate.swift */; };
 		68F1399024A4CD39000EDDEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F1398F24A4CD39000EDDEF /* SceneDelegate.swift */; };
 		68F1399224A4CD39000EDDEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F1399124A4CD39000EDDEF /* ContentView.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		681FCC31251E175B006D5C4E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		688AA34324D606D200AA9CAB /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		68F1398A24A4CD39000EDDEF /* SimpleQrCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleQrCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F1398D24A4CD39000EDDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68F1398F24A4CD39000EDDEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,7 @@
 		68F1399624A4CD3B000EDDEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		68F1399924A4CD3C000EDDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68F1399B24A4CD3C000EDDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68F139A124A4D7CC000EDDEF /* SimpleQrCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleQrCode.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		688AA34524D60A5F00AA9CAB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				68F1398D24A4CD39000EDDEF /* AppDelegate.swift */,
+				68F1398F24A4CD39000EDDEF /* SceneDelegate.swift */,
+				68F1399124A4CD39000EDDEF /* ContentView.swift */,
+				688AA34324D606D200AA9CAB /* KeyboardResponder.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		68F1398124A4CD39000EDDEF = {
 			isa = PBXGroup;
 			children = (
+				681FCC31251E175B006D5C4E /* README.md */,
 				68F1398C24A4CD39000EDDEF /* SimpleQrCode */,
 				68F1398B24A4CD39000EDDEF /* Products */,
 			);
@@ -56,9 +73,8 @@
 		68F1398C24A4CD39000EDDEF /* SimpleQrCode */ = {
 			isa = PBXGroup;
 			children = (
-				68F1398D24A4CD39000EDDEF /* AppDelegate.swift */,
-				68F1398F24A4CD39000EDDEF /* SceneDelegate.swift */,
-				68F1399124A4CD39000EDDEF /* ContentView.swift */,
+				68F139A124A4D7CC000EDDEF /* SimpleQrCode.entitlements */,
+				688AA34524D60A5F00AA9CAB /* Sources */,
 				68F1399324A4CD3B000EDDEF /* Assets.xcassets */,
 				68F1399824A4CD3C000EDDEF /* LaunchScreen.storyboard */,
 				68F1399B24A4CD3C000EDDEF /* Info.plist */,
@@ -102,7 +118,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Martin Albrecht";
 				TargetAttributes = {
 					68F1398924A4CD39000EDDEF = {
@@ -135,6 +151,7 @@
 			files = (
 				68F1399A24A4CD3C000EDDEF /* LaunchScreen.storyboard in Resources */,
 				68F1399724A4CD3B000EDDEF /* Preview Assets.xcassets in Resources */,
+				681FCC32251E175B006D5C4E /* README.md in Resources */,
 				68F1399424A4CD3B000EDDEF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68F1398E24A4CD39000EDDEF /* AppDelegate.swift in Sources */,
+				688AA34424D606D200AA9CAB /* KeyboardResponder.swift in Sources */,
 				68F1399024A4CD39000EDDEF /* SceneDelegate.swift in Sources */,
 				68F1399224A4CD39000EDDEF /* ContentView.swift in Sources */,
 			);
@@ -192,6 +210,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -216,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,6 +271,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleQrCode/SimpleQrCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleQrCode/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TM9NALPC3;
@@ -295,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seriousmonkey.SimpleQrCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SimpleQrCode/SimpleQrCode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleQrCode/Preview Content\"";
 				DEVELOPMENT_TEAM = 4TM9NALPC3;
@@ -315,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.seriousmonkey.SimpleQrCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
